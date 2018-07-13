@@ -1,0 +1,27 @@
+﻿@model  string
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Feature Flag POC</h1>
+    <p class="lead">Taking a quick look at how Feautre Flags can enable us to minimise risk and be more Agile in our delivery of software.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>@Model</h2>
+        <p>
+            The text above is changing depending upon whether or not a feature flag is enabled.
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>This text doesn't change</h2>
+        <p>Not everything has to be feature flagged...</p>
+    </div>
+    <div class="col-md-4">
+        <h2>This will stay the same too...</h2>
+        <p>No changes to be seen here either.</p>
+    </div>
+    @Html.ActionLink("Let's Register for the Product", "Registration", "Home", null, new { @class = "btn btn-success" })
+</div>

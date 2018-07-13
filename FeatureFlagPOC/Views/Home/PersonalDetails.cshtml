@@ -1,0 +1,9 @@
+﻿@{
+    ViewBag.Title = "Personal Details";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>This is the Personal Details page. We collect your name, age and address here.</p>
+
+@Html.ActionLink("Continue", "Payment", "Home", null, new { @class = "btn btn-success" })

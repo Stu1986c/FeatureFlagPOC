@@ -1,0 +1,9 @@
+﻿@{
+    ViewBag.Title = "Stripe";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>This is the Stripe page. We use Stripe to take payment here.</p>
+
+@Html.ActionLink("Continue", "Complete", "Home", null, new { @class = "btn btn-success" })
